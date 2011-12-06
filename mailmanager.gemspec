@@ -19,8 +19,8 @@ spec = Gem::Specification.new do |s|
   ]
   s.rdoc_options = ["--charset=UTF-8"]
   s.authors = ["Wes Morgan"]
-  s.email = "MorganW@dnc.org"
-  s.homepage = "http://github.com/dnclabs/mailmanager"
+  s.email = "cap10morgan@gmail.com"
+  s.homepage = "http://github.com/cap10morgan/mailmanager"
   s.add_runtime_dependency('json', '~>1.4.6')
   s.add_runtime_dependency('open4', '~>1.0.1')
   s.add_development_dependency('rspec', '~>2.4.0')

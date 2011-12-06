@@ -20,11 +20,6 @@ task :install => :build do
   system "gem install pkg/mailmanager-#{MailManager::VERSION}.gem"
 end
 
-desc "Push gem to gems.dnc.org"
-task :inabox => :build do
-  system "gem inabox pkg/mailmanager-#{MailManager::VERSION}.gem"
-end
-
 desc "Push gem to rubygems.org"
 task :release => :build do
   system "gem push pkg/mailmanager-#{MailManager::VERSION}.gem"

@@ -1,4 +1,7 @@
-Current version is 1.0.19
+Current version is 1.0.20
+
+changes since 1.0.19
+- none, just updated website & other README-type stuff
 
 changes since 1.0.18
 - added optional custom_headers arg to MailManager::List#inject
