@@ -2,7 +2,7 @@ APP_ROOT = File.expand_path( File.dirname(__FILE__) )
 $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
 require 'mailmanager/version'
 require 'rake'
-require 'rake/rdoctask'
+require 'rdoc/task'
 require 'rspec/core/rake_task'
 
 # load all .rake files in the tasks dir
@@ -36,5 +36,7 @@ RSpec::Core::RakeTask.new(:spec) do |spec|
   spec.pattern = 'spec/**/*_spec.rb'
 end
 
-desc "Run tests for rubygems-test"
+desc "Run tests for mailmanager"
 task :test => :spec
+
+task :default => :spec
