@@ -1,6 +1,7 @@
 # MailManager
 
 [![Build Status](https://travis-ci.org/cap10morgan/mailmanager.svg?branch=master)](https://travis-ci.org/cap10morgan/mailmanager)
+[![Gem Version](https://badge.fury.io/rb/mailmanager.svg)](http://badge.fury.io/rb/mailmanager)
 
 MailManager is a Ruby wrapper for the GNU Mailman mailing list manager. It exposes
 some administrative functions to Ruby. See the [API docs](http://rubydoc.info/github/cap10morgan/mailmanager/master/frames)
