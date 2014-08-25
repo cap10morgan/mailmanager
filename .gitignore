@@ -5,3 +5,5 @@ doc/*
 results/*
 mailman
 coverage/*
+Gemfile.lock
+.ruby-version
