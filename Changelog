@@ -1,4 +1,8 @@
-Current version is 1.1.0
+Current version is 1.1.1
+
+changes since 1.1.0
+- relaxed dependency version constraints
+- fixed some deprecation warnings
 
 changes since 1.0.20
 - krissi added a find_member method and cleaned up some old cruft
