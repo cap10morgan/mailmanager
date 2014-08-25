@@ -23,6 +23,7 @@ spec = Gem::Specification.new do |s|
   s.homepage = "http://github.com/cap10morgan/mailmanager"
   s.add_runtime_dependency('json', '~>1.4.6')
   s.add_runtime_dependency('open4', '~>1.0.1')
+  s.add_development_dependency('rake')
   s.add_development_dependency('rspec', '~>2.4.0')
   s.add_development_dependency('ZenTest', '~>4.4.2')
   s.add_development_dependency('ci_reporter')
