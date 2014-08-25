@@ -1,4 +1,10 @@
-Current version is 1.0.20
+Current version is 1.1.0
+
+changes since 1.0.20
+- krissi added a find_member method and cleaned up some old cruft
+- removed Cucumber; will re-do acceptance tests in a better way in the future
+- added Travis CI build
+- updated json gem dependency to 1.8.1 for Ruby 2.1.2 support
 
 changes since 1.0.19
 - none, just updated website & other README-type stuff
