@@ -2,6 +2,8 @@
 
 Website[http://github.com/cap10morgan/mailmanager]
 
+Build Status: (Coming soon from TravisCI)
+
 MailManager is a Ruby wrapper for the GNU Mailman mailing list manager. It exposes
 some administrative functions to Ruby. See the API docs[http://rubydoc.info/github/cap10morgan/mailmanager/master/frames]
 for details.
