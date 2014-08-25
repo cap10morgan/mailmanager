@@ -14,9 +14,6 @@ spec = Gem::Specification.new do |s|
   s.test_files = `git ls-files spec`.split("\n")
   s.require_paths = ['lib']
   s.has_rdoc = true
-  s.extra_rdoc_files = [
-    "README.rdoc"
-  ]
   s.rdoc_options = ["--charset=UTF-8"]
   s.authors = ["Wes Morgan"]
   s.email = "cap10morgan@gmail.com"
