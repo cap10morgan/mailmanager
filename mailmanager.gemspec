@@ -18,8 +18,8 @@ spec = Gem::Specification.new do |s|
   s.authors = ["Wes Morgan"]
   s.email = "cap10morgan@gmail.com"
   s.homepage = "http://github.com/cap10morgan/mailmanager"
-  s.add_runtime_dependency('json', '~> 1.8.1')
-  s.add_runtime_dependency('open4', '~> 1.0.1')
+  s.add_runtime_dependency('json', '~> 1.8')
+  s.add_runtime_dependency('open4', '~> 1.0')
   s.add_development_dependency('rake')
-  s.add_development_dependency('rspec', '~> 2.4.0')
+  s.add_development_dependency('rspec', '~> 2.4')
 end

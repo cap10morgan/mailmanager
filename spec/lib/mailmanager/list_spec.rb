@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe MailManager::List do
-  let(:lib)       { mock(MailManager::Lib) }
+  let(:lib)       { double(MailManager::Lib) }
   let(:subject)   { MailManager::List.new('foo') }
 
   before :each do

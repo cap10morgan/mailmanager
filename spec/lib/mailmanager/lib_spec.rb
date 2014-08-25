@@ -1,11 +1,11 @@
 require 'spec_helper'
 
 describe MailManager::Lib do
-  let(:mailmanager) { mock(MailManager) }
+  let(:mailmanager) { double(MailManager) }
   let(:subject)     { MailManager::Lib.new }
   let(:fake_root)   { '/foo/bar' }
   let(:python)      { '/usr/bin/env python' }
-  let(:process)     { mock(Process::Status) }
+  let(:process)     { double(Process::Status) }
   let(:list_result) { <<EOF
 3 matching mailing lists found:
         Foo - [no description available]
@@ -25,7 +25,7 @@ EOF
     it "should return all existing lists" do
       subject.stub(:run_command).with("#{python} #{fake_root}/bin/list_lists 2>&1", nil).
         and_return([list_result, process])
-      subject.lists.should have(3).lists
+      expect(subject.lists.size).to eq(3)
     end
   end
 
@@ -68,11 +68,11 @@ EOF
       }
       let(:new_list_return) {
         prefix =<<EOF
-To finish creating your mailing list, you must edit your /etc/aliases (or                           
-equivalent) file by adding the following lines, and possibly running the                            
-`newaliases' program:                                                                               
-                                                                                                    
-## bar mailing list                                                                                 
+To finish creating your mailing list, you must edit your /etc/aliases (or
+equivalent) file by adding the following lines, and possibly running the
+`newaliases' program:
+
+## bar mailing list
 EOF
         prefix+new_aliases.join("\n")
       }
@@ -138,7 +138,7 @@ EOF
   end
 
   context "with populated list" do
-    let(:list) { list = mock(MailManager::List)
+    let(:list) { list = double(MailManager::List)
                  list.stub(:name).and_return('foo')
                  list }
 
